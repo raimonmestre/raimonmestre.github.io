@@ -1,7 +1,64 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Hello World</h1>
-<p>I'm hosted with GitHub Pages.</p>
-</body>
+  <head>
+    <title>Startup Deportes - Suscripción</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="inicio">
+        <h2>Bienvenidos a Startup Deportes</h2>
+        <p>Somos una startup dedicada a brindarte los mejores servicios deportivos.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="imagenes">
+          <img src="imagen1.jpg" alt="Imagen 1">
+          <img src="imagen2.jpg" alt="Imagen 2">
+          <img src="imagen3.jpg" alt="Imagen 3">
+        </div>
+      </section>
+      <section id="nosotros">
+        <h2>Nosotros</h2>
+        <p>Somos un equipo de apasionados del deporte que trabajamos para brindarte las mejores experiencias deportivas.</p>
+      </section>
+      <section id="planes">
+        <h2>Planes de suscripción</h2>
+        <div class="plan">
+          <h3>Plan básico</h3>
+          <p>Accede a todos nuestros servicios deportivos por solo $9.99 al mes.</p>
+          <button class="btn-suscripcion">Suscribirse</button>
+        </div>
+        <div class="plan">
+          <h3>Plan premium</h3>
+          <p>Accede a todos nuestros servicios deportivos y a beneficios exclusivos por solo $19.99 al mes.</p>
+          <button class="btn-suscripcion">Suscribirse</button>
+        </div>
+      </section>
+      <section id="contacto">
+        <h2>Contacto</h2>
+        <form>
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+          <button class="btn-enviar">Enviar</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2023 Startup Deportes. Todos los derechos reservados.</p>
+    </footer>
+    <script src="main.js"></script>
+  </body>
 </html>
