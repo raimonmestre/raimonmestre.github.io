@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startup de deportes</title>
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
   </head>
   <body>
-    <header>
-      <nav>
+    <header >
+      <nav class="navbar navbar-expand-lg">
+        <a href="#" class="navbar-brand"><img src="src/log.png" width="30" height="30" class="d-inline-block align-top" alt=""></a>
+        <a class="navbar-brand" href="#">Sports Tracker</a>
         <ul>
-          <li><a href="#inicio">Inicio</a></li>
-          <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#contacto">Contacto</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">¿Quienes Somos?</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
       </nav>
     </header>
@@ -21,61 +24,47 @@
       <section id="inicio">
         <h2>¡Bienvenido a nuestra Startup de deportes!</h2>
         <div class="video-container">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <center>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          </center>
         </div>
+        <br>
+        <h3>Nuestros planes son:</h3>
         <div class="card-deck">
           <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Imagen 1">
+            <img src="src/planBasico.png" width="100%" height="250px">
             <div class="card-body">
-              <h3 class="card-title">Plan básico</h3>
+              <h3 class="card-title">Características:</h3>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris.</p>
-              <button class="btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
+              <button class="btn btn-primary btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
             </div>
           </div>
           <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Imagen 2">
+            <img src="src/planAma.png" width="100%" height="250px">
             <div class="card-body">
-              <h3 class="card-title">Plan premium</h3>
+              <h3 class="card-title">Características:</h3>
+              <ul>
+                <li>ChatBot Medico <img src="src/bien.png" width="25px"></li>
+                <li>ChatBot Psicologico <img src="src/bien.png" width="25px"></li>
+                <li></li>
+                <li></li>
+              </ul>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris.</p>
-              <button class="btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
+              <button class=" btn btn-primary btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
             </div>
           </div>
           <div class="card">
-            <img src="https://via.placeholder.com/300x200" alt="Imagen 3">
+            <img src="src/planPro.png" width="100%" height="250px">
             <div class="card-body">
-              <h3 class="card-title">Plan profesional</h3>
+              <h3 class="card-title">Características:</h3>
               <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris.</p>
-              <button class="btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
+              <button class="btn btn-primary btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="nosotros">
-        <h2>Nosotros</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris. Nam nec bibendum ipsum. Integer eget mauris vitae odio pellentesque auctor. Ut vitae fringilla mi. Aenean elementum, neque eget rutrum pellentesque, dolor lacus bibendum arcu, sed fringilla tellus felis ac nibh. Integer eget augue
-        </p>
-        <p>Nulla at arcu elit. Praesent scelerisque consectetur nibh, quis vehicula est euismod in. Sed eget velit diam. Sed malesuada eros et dolor malesuada, in sagittis turpis pharetra. Suspendisse in augue sed ipsum faucibus egestas sit amet at lectus. Aenean eget nulla non nunc varius ultrices. Sed volutpat augue in ipsum tristique consequat. Sed consequat sem at nulla consectetur blandit. Pellentesque et venenatis odio.</p>
-      </section>
-
-      <section id="contacto">
-        <h2>Contacto</h2>
-        <form>
-          <div>
-            <label for="nombre">Nombre:</label>
-            <input type="text" id="nombre" name="nombre" required>
-          </div>
-          <div>
-            <label for="correo">Correo electrónico:</label>
-            <input type="email" id="correo" name="correo" required>
-          </div>
-          <div>
-            <label for="mensaje">Mensaje:</label>
-            <textarea id="mensaje" name="mensaje" required></textarea>
-          </div>
-          <button type="submit">Enviar</button>
-        </form>
-      </section>
     </main>
 
     <!-- Modal de suscripción -->
@@ -104,11 +93,13 @@
             <label for="tarjeta-credito">Tarjeta de crédito:</label>
             <input type="text" id="tarjeta-credito" name="tarjeta-credito" required>
           </div>
-          <button type="submit">Enviar</button>
+          <button type="submit" class="btn btn-success">Enviar</button>
         </form>
       </div>
     </div>
 
     <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js" integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
   </body>
 </html>

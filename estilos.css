@@ -16,6 +16,10 @@
     color: #fff;
     padding: 20px;
   }
+
+  nav a{
+    color: white !important;
+  }
   
   nav ul {
     list-style-type: none;
@@ -36,6 +40,7 @@
   
   nav ul li a:hover {
     background-color: #555;
+    color: #fff;
   }
   
   main {
@@ -254,13 +259,12 @@
     margin-bottom: 30px;
   }
   
-  .card-body {
-    text-align: center;
-  }
+ 
   
   .card-title {
     font-size: 24px;
     margin-bottom: 10px;
+    text-align: center;
   }
   
   .card-text {
