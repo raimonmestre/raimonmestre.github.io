@@ -271,3 +271,13 @@
     font-size: 16px;
     margin-bottom: 20px;
   }
+
+.sinDecorar{
+  list-style: none;
+}
+.check{
+  padding-left: 0;
+}
+.tamBR{
+  margin: 20px;
+}
