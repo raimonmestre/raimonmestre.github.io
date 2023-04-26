@@ -1,8 +1,10 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
   <head>
-    <title>Startup Deportes - Suscripción</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup de deportes</title>
+    <link rel="stylesheet" href="estilos.css">
   </head>
   <body>
     <header>
@@ -10,55 +12,103 @@
         <ul>
           <li><a href="#inicio">Inicio</a></li>
           <li><a href="#nosotros">Nosotros</a></li>
-          <li><a href="#planes">Planes</a></li>
           <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+
+    <main class="container">
       <section id="inicio">
-        <h2>Bienvenidos a Startup Deportes</h2>
-        <p>Somos una startup dedicada a brindarte los mejores servicios deportivos.</p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        <div class="imagenes">
-          <img src="imagen1.jpg" alt="Imagen 1">
-          <img src="imagen2.jpg" alt="Imagen 2">
-          <img src="imagen3.jpg" alt="Imagen 3">
+        <h2>¡Bienvenido a nuestra Startup de deportes!</h2>
+        <div class="video-container">
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        <div class="card-deck">
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Imagen 1">
+            <div class="card-body">
+              <h3 class="card-title">Plan básico</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris.</p>
+              <button class="btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Imagen 2">
+            <div class="card-body">
+              <h3 class="card-title">Plan premium</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris.</p>
+              <button class="btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
+            </div>
+          </div>
+          <div class="card">
+            <img src="https://via.placeholder.com/300x200" alt="Imagen 3">
+            <div class="card-body">
+              <h3 class="card-title">Plan profesional</h3>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris.</p>
+              <button class="btn-suscribirse" onclick="abrirModal()">Subscribirse</button>
+            </div>
+          </div>
         </div>
       </section>
+
       <section id="nosotros">
         <h2>Nosotros</h2>
-        <p>Somos un equipo de apasionados del deporte que trabajamos para brindarte las mejores experiencias deportivas.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus et euismod mauris, a dictum mauris. Nam nec bibendum ipsum. Integer eget mauris vitae odio pellentesque auctor. Ut vitae fringilla mi. Aenean elementum, neque eget rutrum pellentesque, dolor lacus bibendum arcu, sed fringilla tellus felis ac nibh. Integer eget augue
+        </p>
+        <p>Nulla at arcu elit. Praesent scelerisque consectetur nibh, quis vehicula est euismod in. Sed eget velit diam. Sed malesuada eros et dolor malesuada, in sagittis turpis pharetra. Suspendisse in augue sed ipsum faucibus egestas sit amet at lectus. Aenean eget nulla non nunc varius ultrices. Sed volutpat augue in ipsum tristique consequat. Sed consequat sem at nulla consectetur blandit. Pellentesque et venenatis odio.</p>
       </section>
-      <section id="planes">
-        <h2>Planes de suscripción</h2>
-        <div class="plan">
-          <h3>Plan básico</h3>
-          <p>Accede a todos nuestros servicios deportivos por solo $9.99 al mes.</p>
-          <button class="btn-suscripcion">Suscribirse</button>
-        </div>
-        <div class="plan">
-          <h3>Plan premium</h3>
-          <p>Accede a todos nuestros servicios deportivos y a beneficios exclusivos por solo $19.99 al mes.</p>
-          <button class="btn-suscripcion">Suscribirse</button>
-        </div>
-      </section>
+
       <section id="contacto">
         <h2>Contacto</h2>
         <form>
-          <label for="nombre">Nombre:</label>
-          <input type="text" id="nombre" name="nombre" required>
-          <label for="email">Email:</label>
-          <input type="email" id="email" name="email" required>
-          <label for="mensaje">Mensaje:</label>
-          <textarea id="mensaje" name="mensaje" required></textarea>
-          <button class="btn-enviar">Enviar</button>
+          <div>
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+          </div>
+          <div>
+            <label for="correo">Correo electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+          </div>
+          <div>
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+          </div>
+          <button type="submit">Enviar</button>
         </form>
       </section>
     </main>
-    <footer>
-      <p>&copy; 2023 Startup Deportes. Todos los derechos reservados.</p>
-    </footer>
-    <script src="main.js"></script>
+
+    <!-- Modal de suscripción -->
+    <div id="modal" class="modal">
+      <div class="modal-contenido">
+        <span class="cerrar-modal" onclick="cerrarModal()">&times;</span>
+        <h3>Suscríbete a nuestro servicio</h3>
+        <form>
+          <div>
+            <label for="nombre-completo">Nombre completo:</label>
+            <input type="text" id="nombre-completo" name="nombre-completo" required>
+          </div>
+          <div>
+            <label for="correo-electronico">Correo electrónico:</label>
+            <input type="email" id="correo-electronico" name="correo-electronico" required>
+          </div>
+          <div>
+            <label for="plan">Plan:</label>
+            <select id="plan" name="plan">
+              <option value="basico">Básico</option>
+              <option value="premium">Premium</option>
+              <option value="profesional">Profesional</option>
+            </select>
+          </div>
+          <div>
+            <label for="tarjeta-credito">Tarjeta de crédito:</label>
+            <input type="text" id="tarjeta-credito" name="tarjeta-credito" required>
+          </div>
+          <button type="submit">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="scripts.js"></script>
   </body>
 </html>
