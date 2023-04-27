@@ -1,4 +1,4 @@
-// Abrir modal al hacer clic en el botón de suscripción
+/*// Abrir modal al hacer clic en el botón de suscripción
 var btnSuscribir = document.querySelectorAll(".btn-suscribir");
 
 btnSuscribir.forEach(function(btn) {
@@ -8,7 +8,7 @@ btnSuscribir.forEach(function(btn) {
 });
 
 // Cerrar modal al hacer clic en el botón de cerrar o en cualquier lugar fuera del modal
-var modal = document.getElementById("modal");
+//var modal = document.getElementById("modal");
 
 window.onclick = function(event) {
   if (event.target == modal) {
@@ -23,3 +23,4 @@ function cerrarModal() {
 function abrirModal() {
   document.getElementById("modal").style.display = "block";
 }
+*/
