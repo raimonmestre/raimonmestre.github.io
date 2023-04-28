@@ -306,6 +306,13 @@
 .comentario{
   margin-bottom: 0px;
 }
-.col h5{
+.col h4{
   margin-bottom: 15px;
+}
+.funcionalidades{
+  padding-left: 40px !important;
+  padding-top: 2px!important;
+}
+.sinPadding{
+  padding: 0 !important;
 }
