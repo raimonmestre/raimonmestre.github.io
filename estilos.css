@@ -289,3 +289,23 @@
 .qrFigma{
   margin-left: 70px;
 }
+.recomendacion{
+  border: #0d6aa8 2px solid;
+  border-radius: 5px;
+}
+
+.fotoReco{
+  padding: 0;
+  margin: 0;
+  border-radius: 10px;
+}
+.reco{
+  padding:0;
+  
+}
+.comentario{
+  margin-bottom: 0px;
+}
+.col h5{
+  margin-bottom: 15px;
+}
